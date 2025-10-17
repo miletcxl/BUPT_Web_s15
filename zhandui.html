@@ -8,12 +8,14 @@
 </head>
 <body>
     <header class="main-header">
-        <!-- (同 index.html) -->
         <div class="container">
-            <a href="index.html" class="logo-link"><img src="assets/images/s15-logo.png" alt="S15 Logo" class="logo"></a>
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/s15-logo.png" alt="S15 全球总决赛 Logo" class="logo">
+                <span class="logo-text">S15 全球总决赛</span>
+            </a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">首页</a></li>
+                    <li><a href="index.html" class="active">首页</a></li>
                     <li><a href="saicheng.html">赛程与比分</a></li>
                     <li><a href="zhandui.html">参赛队伍</a></li>
                     <li><a href="xinwen.html">新闻资讯</a></li>
@@ -22,35 +24,81 @@
             </nav>
         </div>
     </header>
-    <main>
-        <header class="page-header" style="background-image: url('assets/images/banner-teams.jpg');">
-            <h1 class="page-title">参赛队伍</h1>
-        </header>
+    <main> <div class="page-content-wrapper">
+            <!-- 页面标题 -->
+            <header class="page-header" style="background-image: none; padding-top: 120px;">
+                <h1 class="page-title">参赛队伍</h1>
+            </header>
 
-        <div class="page-content">
-            <div class="container">
-                <div class="center-title-wrapper">
-                    <h2 class="section-title">LPL 赛区</h2>
-                </div>
-                <div class="card-grid">
-                    <!-- 示例队伍卡片 -->
-                    <div class="card">
-                        <img src="assets/images/teams/geng-logo.png" alt="Gen.G" class="card-image">
-                        <div class="card-content">
-                            <h3>Gen.G (示例)</h3>
-                            <p>赛区: LCK (韩国)</p>
-                            <p>资格: LCK 一号种子</p>
-                        </div>
+            <!-- 战队网格布局区域 -->
+            <section class="team-grid-section">
+                <div class="container">
+                    <div class="team-grid">
+                        <!-- 所有战队卡片 (已移除文字) -->
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/BLG.png" alt="BLG Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/AL.png" alt="AL Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/TES.png" alt="TES Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/IG.png" alt="IG Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/GENG.png" alt="GENG Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/HLE.png" alt="HLE Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/KT.png" alt="KT Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/T1.png" alt="T1 Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/FLY.png" alt="FLY Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/VKS.png" alt="VKS Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/100T.png" alt="100T Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/G2.png" alt="G2 Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/MKOI.png" alt="MKOI Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/FNC.png" alt="FNC Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/CFO.png" alt="CFO Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/TSW.png" alt="TSW Team Logo" class="team-logo">
+                        </a>
+                        <a href="#" class="team-card">
+                            <img src="assets/images/teams/PSG.png" alt="PSG Team Logo" class="team-logo">
+                        </a>
                     </div>
-                    <!-- (在此添加更多队伍卡片) -->
                 </div>
-                <!-- (可为其他赛区重复以上结构) -->
-            </div>
+            </section>
         </div>
     </main>
 
+    <!-- ======================= 页脚区域 ======================= -->
     <footer class="main-footer">
-        <!-- (同 index.html) -->
+        <div class="container">
+            <div class="footer-content">
+                <p>曹鑫磊 2023211537 版权所有 :)</p>
+            </div>
+        </div>
     </footer>
     <script src="assets/js/main.js"></script>
 </body>

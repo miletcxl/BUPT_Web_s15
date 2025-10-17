@@ -9,13 +9,15 @@
 <body>
 
     <header class="main-header">
-        <!-- (同 index.html) -->
         <div class="container">
-            <a href="index.html" class="logo-link"><img src="assets/images/s15-logo.png" alt="S15 Logo" class="logo"></a>
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/s15-logo.png" alt="S15 全球总决赛 Logo" class="logo">
+                <span class="logo-text">S15 全球总决赛</span>
+            </a>
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">首页</a></li>
-                    <li><a href="saicheng.html">赛程与比分</a></li>
+                    <li><a href="saicheng.html" class="active">赛程与比分</a></li>
                     <li><a href="zhandui.html">参赛队伍</a></li>
                     <li><a href="xinwen.html">新闻资讯</a></li>
                     <li><a href="changguan.html">赛事场馆</a></li>
@@ -32,10 +34,126 @@
         <div class="page-content">
             <div class="container">
 
-                <!-- 瑞士轮 -->
+                <!-- (新的) 瑞士轮当前排名 -->
+                <section class="standings-section">
+                    <div class="center-title-wrapper">
+                         <h2 class="section-title">瑞士轮当前排名</h2>
+                    </div>
+                    <table class="standings-table">
+                        <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th>战队</th>
+                                <th>战绩 (胜/负)</th>
+                                <th>状态</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 根据您提供的数据填充 -->
+                            <tr>
+                                <td>1</td>
+                                <td class="team-cell"><img src="assets/images/teams/KT.png" alt="KT"> KT Rolster</td>
+                                <td>3/0</td>
+                                <td class="status-qualified">已晋级</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="team-cell"><img src="assets/images/teams/AL.png" alt="AL"> Anyone's Legend</td>
+                                <td>2/0</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="team-cell"><img src="assets/images/teams/CFO.png" alt="CFO"> CTBC Flying Oyster</td>
+                                <td>2/0</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                             <tr>
+                                <td>4</td>
+                                <td class="team-cell"><img src="assets/images/teams/TES.png" alt="TES"> Top Esports</td>
+                                <td>2/1</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="team-cell"><img src="assets/images/teams/100T.png" alt="100T"> 100 Thieves</td>
+                                <td>1/1</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td class="team-cell"><img src="assets/images/teams/BLG.png" alt="BLG"> Bilibili Gaming</td>
+                                <td>999/1</td>
+                                <td class="status-pending">预定冠军</td>
+                            </tr>
+                             <tr>
+                                <td>7</td>
+                                <td class="team-cell"><img src="assets/images/teams/FLY.png" alt="FLY"> FlyQuest</td>
+                                <td>1/1</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td class="team-cell"><img src="assets/images/teams/G2.png" alt="G2"> G2 Esports</td>
+                                <td>1/1</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td class="team-cell"><img src="assets/images/teams/GENG.png" alt="GEN"> Gen.G</td>
+                                <td>1/1</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                             <tr>
+                                <td>10</td>
+                                <td class="team-cell"><img src="assets/images/teams/HLE.png" alt="HLE"> Hanwha Life Esports</td>
+                                <td>1/1</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                             <tr>
+                                <td>11</td>
+                                <td class="team-cell"><img src="assets/images/teams/T1.png" alt="T1"> T1</td>
+                                <td>1/1</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td class="team-cell"><img src="assets/images/teams/TSW.png" alt="TSW"> Team Spirit</td>
+                                <td>1/1</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td class="team-cell"><img src="assets/images/teams/FNC.png" alt="FNC"> Fnatic</td>
+                                <td>0/2</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                             <tr>
+                                <td>14</td>
+                                <td class="team-cell"><img src="assets/images/teams/MKOI.png" alt="MKOI"> Movistar KOI</td>
+                                <td>0/2</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                             <tr>
+                                <td>15</td>
+                                <td class="team-cell"><img src="assets/images/teams/PSG.png" alt="PSG"> PSG Talon</td>
+                                <td>0/2</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td class="team-cell"><img src="assets/images/teams/VKS.png" alt="VKS"> Vivo Keyd Stars</td>
+                                <td>0/2</td>
+                                <td class="status-pending">待定</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- 瑞士轮赛程 -->
                 <section class="schedule-section">
                     <div class="center-title-wrapper">
-                         <h2 class="section-title">瑞士轮</h2>
+                         <h2 class="section-title">瑞士轮赛程</h2>
                     </div>
                     <table class="schedule-table">
                         <thead>
@@ -48,19 +166,17 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- 示例比赛条目 -->
                             <tr>
-                                <td>10月14日</td>
+                                <td>11月16日</td>
                                 <td>17:00</td>
                                 <td class="team-cell">
-                                    <img src="assets/images/teams/lpl-logo.png" alt="LPL Team 1"> LPL #1
+                                    <img src="assets/images/teams/BLG.png" alt="BLG"> 
                                     <span class="vs-cell">VS</span>
-                                    <img src="assets/images/teams/lck-logo.png" alt="LCK Team 2"> LCK #2
+                                    <img src="assets/images/teams/GENG.png" alt="GENG"> 
                                 </td>
-                                <td>1 - 0</td>
-                                <td>BO1</td>
+                                <td>3-2</td>
+                                <td>BO5</td>
                             </tr>
-                            <!-- (在此添加更多比赛) -->
                         </tbody>
                     </table>
                 </section>
@@ -71,7 +187,7 @@
                          <h2 class="section-title">淘汰赛</h2>
                     </div>
                      <table class="schedule-table">
-                        <!-- (表格结构同上) -->
+                         <!-- (淘汰赛赛程) -->
                      </table>
                 </section>
 
@@ -80,9 +196,8 @@
     </main>
 
     <footer class="main-footer">
-        <!-- (同 index.html) -->
         <div class="container">
-            <p>&copy; 2025 Riot Games, Inc. 版权所有。</p>
+            <p>&copy; 曹鑫磊 2023211537 版权所有 :)</p>
         </div>
     </footer>
 

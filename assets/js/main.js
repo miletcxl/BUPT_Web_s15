@@ -1,3 +1,18 @@
+window.addEventListener('load', function() {
+    const body = document.querySelector('body');
+    const curtains = document.querySelectorAll('.curtain');
+
+    // 1. 添加 'loaded' 类来触发CSS动画
+    body.classList.add('loaded');
+
+    // 2. (可选但推荐) 在动画结束后，将幕布隐藏，防止影响页面交互
+    setTimeout(function() {
+        curtains.forEach(curtain => {
+            curtain.style.display = 'none';
+        });
+    }, 2000); // 这个时间应该比CSS的transition时间稍长
+});
+
 // 当整个页面的内容都加载完毕后执行
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -45,5 +60,4 @@ document.addEventListener('DOMContentLoaded', function() {
              link.classList.remove('active'); // 移除其他链接的 active class
         }
     });
-
 });
