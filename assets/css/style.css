@@ -1,0 +1,304 @@
+/* --- 全局重置与基础样式 --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #0a0a1a; /* 深蓝黑色背景 */
+    color: #f0f0f0; /* 默认文字颜色 */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: #00aaff; /* 链接颜色 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4dc3ff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #c89b3c; /* 金色下划线 */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.center-title-wrapper {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* --- 头部与导航 --- */
+.main-header {
+    background-color: rgba(10, 10, 26, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #2a2a3a;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 30px;
+}
+
+.main-nav a {
+    color: #f0f0f0;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #c89b3c; /* 金色高亮 */
+    border-bottom-color: #c89b3c;
+}
+
+/* --- 页脚 --- */
+.main-footer {
+    background-color: #05050a;
+    color: #aaa;
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #2a2a3a;
+    margin-top: 80px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 15px;
+}
+
+.social-links img {
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover img {
+    opacity: 1;
+}
+
+/* --- 首页 (index.html) 英雄区域 --- */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero-title {
+    font-size: 5em;
+    color: #f0f0f0;
+    text-shadow: 0 0 15px #c89b3c;
+}
+
+.hero-subtitle {
+    font-size: 2em;
+    color: #c89b3c;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.countdown-timer {
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    background: #c89b3c;
+    color: #0a0a1a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.cta-button {
+    background-color: #c89b3c;
+    color: #0a0a1a;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e6b856;
+    transform: translateY(-3px);
+}
+
+
+/* --- 通用页面样式 (用于其他页面) --- */
+.page-header {
+    padding-top: 150px; /* 留出导航栏空间 */
+    padding-bottom: 50px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.page-header::after { /* 添加蒙层使文字更清晰 */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 26, 0.7);
+}
+.page-title {
+    font-size: 3.5em;
+    position: relative;
+    z-index: 1;
+}
+
+.page-content {
+    padding: 50px 0;
+}
+
+
+/* --- 卡片网格布局 (用于新闻、队伍、场馆) --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #1a1a2a;
+    border: 1px solid #2a2a3a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #c89b3c;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #ccc;
+}
+
+
+/* --- 赛程页面 spécifiques --- */
+.schedule-section {
+    margin-bottom: 60px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a2a;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #2a2a3a;
+}
+
+.schedule-table th {
+    background-color: #c89b3c;
+    color: #0a0a1a;
+    font-size: 1.2em;
+}
+
+.team-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-cell img {
+    height: 40px;
+    margin: 0 10px;
+}
+
+.vs-cell {
+    font-weight: bold;
+    color: #c89b3c;
+    font-size: 1.5em;
+}
