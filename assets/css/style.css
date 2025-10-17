@@ -158,6 +158,10 @@ img {
     height: 50px;
 }
 
+main {
+    flex-grow: 1;
+}
+
 .main-nav ul {
     list-style: none;
     display: flex;
@@ -188,7 +192,6 @@ img {
     padding: 40px 0;
     text-align: center;
     border-top: 1px solid #2a2a3a;
-    margin-top: 80px;
 }
 
 .social-links {
@@ -761,13 +764,6 @@ img {
 }
 
 .theme-char {
-    /* 
-       1. 指定一个与众不同的字体。
-       这是一个 "font stack"（字体栈），浏览器会按顺序尝试使用：
-       - "KaiTi", "STKaiti": 这是常见的楷体字体，具有书法感，在Windows和Mac上很常见。
-       - "SimHei": 如果找不到楷体，就使用粗一些的黑体。
-       - serif: 如果以上都没有，就使用一个通用的衬线字体。
-    */
     font-family: "KaiTi", "STKaiti", "SimHei", serif;
 
     color: #c89b3c;
