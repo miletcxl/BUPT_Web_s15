@@ -714,9 +714,64 @@ img {
 
 /* 删除 .team-name 样式，因为它不再存在 */
 
-/* --- (新的) 悬停效果 --- */
+/* --- 悬停效果 --- */
 .team-card:hover {
     transform: translateY(-8px); /* 卡片上浮效果 */
     border-color: #c89b3c; /* 边框变为主题金色 */
     box-shadow: 0 0 25px rgba(200, 155, 60, 0.5); /* 添加金色的光晕效果 */
+}
+
+.video-section {
+    padding: 80px 0;
+    background-color: #0c0c1c;
+    text-align: center;
+}
+
+.video-section .section-title {
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+/* 响应式视频容器 */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --- 响应式调整 --- */
+@media (max-width: 992px) {
+    .cards-grid {
+        grid-template-columns: 1fr; /* 在平板和手机上，卡片变为单列堆叠 */
+    }
+}
+
+.theme-char {
+    /* 
+       1. 指定一个与众不同的字体。
+       这是一个 "font stack"（字体栈），浏览器会按顺序尝试使用：
+       - "KaiTi", "STKaiti": 这是常见的楷体字体，具有书法感，在Windows和Mac上很常见。
+       - "SimHei": 如果找不到楷体，就使用粗一些的黑体。
+       - serif: 如果以上都没有，就使用一个通用的衬线字体。
+    */
+    font-family: "KaiTi", "STKaiti", "SimHei", serif;
+
+    color: #c89b3c;
+    font-size: 1.2em;
+    text-shadow: 0 0 10px rgba(200, 155, 60, 0.7);
+    margin-left: 0.25em;
 }
